@@ -158,6 +158,10 @@ extension SignalProtocol {
 extension SignalProtocol where Element == Void {
 
     public func prepend() -> Signal<Void, Error> {
-        return prepend(())
+        prepend(())
+    }
+
+    public func append() -> Signal<Void, Error> {
+        append(())
     }
 }
